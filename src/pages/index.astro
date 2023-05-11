@@ -64,7 +64,9 @@ const [{ data: guitarras }, { data: posts }, { data: curso }] =
               contenido={post?.attributes.contenido}
               url={post?.attributes.url}
               publishedAt={post?.attributes.publishedAt}
-              imagen={post.attributes.imagen.data.attributes.formats.medium.url}
+              imagen={
+                post?.attributes.imagen.data.attributes.formats.medium.url
+              }
             />
           ))}
         </div>
